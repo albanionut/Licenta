@@ -1,2 +1,2 @@
 # Licenta
-Aplicatie 
+Aplicatie AUgumented Reality 
