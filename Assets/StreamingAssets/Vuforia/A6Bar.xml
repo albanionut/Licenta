@@ -7,10 +7,13 @@
 
 <Assembly name="A6Bars_assembly" assemblyId="d2b1f766b7504d0fb40d63aa88c12072">
 <Part name="A6Bar" translation="0 0 0" rotation="AD: 0 0 1 0"/>
-<EntryPoint name="viewpoint_0000" translation="-33.2663 41.8738 266.435" rotation="AD: 0.9999995276707312 -0.005092816028504307 0.1944867976117766 182.945" trained="no">
+<EntryPoint name="viewpoint_0000" translation="1.27486 13.2185 281.193" rotation="AD: 0.99999999999979 0.00024805693993308386 -0.0026247783077227387 190.797" trained="no">
 
 </EntryPoint>
-<EntryPoint name="viewpoint_0001" translation="74.6633 48.5333 271.962" rotation="AD: 0.9999993765451025 0.004289487306652935 -0.2696551411184572 181.76" trained="no">
+<EntryPoint name="viewpoint_0002" translation="-123.409 26.1265 230.652" rotation="AD: 0.9996391093953892 -0.05421317139439334 0.5736487610757683 189.362" trained="no">
+
+</EntryPoint>
+<EntryPoint name="viewpoint_0003" translation="123.288 26.9932 220.374" rotation="AD: 0.9996234754190348 0.054873561147215075 -0.5806365788659761 189.333" trained="no">
 
 </EntryPoint>
 

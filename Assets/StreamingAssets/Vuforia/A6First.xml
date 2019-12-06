@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="A6Bar" motionHint="static"/>
+<ModelTarget name="A6Wheel" motionHint="static"/>
+
+</Tracking>
+
+<Assembly name="A6Bars_assembly" assemblyId="d2b1f766b7504d0fb40d63aa88c12072">
+<Part name="A6Bar" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="1.27486 13.2185 281.193" rotation="AD: 0.99999999999979 0.00024805693993308386 -0.0026247783077227387 190.797" trained="no">
+
+</EntryPoint>
+<EntryPoint name="viewpoint_0002" translation="-123.409 26.1265 230.652" rotation="AD: 0.9996391093953892 -0.05421317139439334 0.5736487610757683 189.362" trained="no">
+
+</EntryPoint>
+<EntryPoint name="viewpoint_0003" translation="123.288 26.9932 220.374" rotation="AD: 0.9996234754190348 0.054873561147215075 -0.5806365788659761 189.333" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+<Assembly name="A6Wheels_assembly" assemblyId="3c9343e53dae4a929d546ac6b70dc993">
+<Part name="A6Wheel" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="2.02753 14.0351 72.9903" rotation="AD: 0.9987972914224713 0.07011456257723696 -0.9819546619514264 185.822" trained="no">
+
+</EntryPoint>
+<EntryPoint name="viewpoint_0001" translation="23.4359 16.0141 59.2031" rotation="AD: -0.9706638411719403 -0.25013515913180606 3.503143663727017 177.821" trained="no">
+
+</EntryPoint>
+<EntryPoint name="viewpoint_0005" translation="-20.7391 15.6798 61.5319" rotation="AD: 0.9999893277579243 0.0184829306134807 -0.25885349940590474 187.907" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+<ModelTargetDatabase name="A6First" />
+</QCARConfig>
