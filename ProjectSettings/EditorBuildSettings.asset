@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Wheel.unity
     guid: 009a6af912927b2469b9dbffb42eacfb
+  - enabled: 1
+    path: Assets/Scenes/New Scene.unity
+    guid: 32485e87cf4e3204baf4f1c7867749bd
   m_configObjects: {}
