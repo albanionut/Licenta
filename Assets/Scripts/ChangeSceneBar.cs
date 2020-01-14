@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ChangeScene : MonoBehaviour
+public class ChangeSceneBar : MonoBehaviour
 {
-
     public void changeScene(){
-        SceneManager.LoadScene("Wheel");
+        SceneManager.LoadScene("TuneA6");
     }
+
 }
