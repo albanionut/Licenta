@@ -1,14 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
 
 public class ApplyColor : MonoBehaviour
 {
-    public FlexibleColorPicker fcp; 
+    public FlexibleColorPicker fcp;
     public Material material;
-    
+
     void Update()
     {
-        material.color=fcp.color;
+        material.color = fcp.color;
+
     }
 }
