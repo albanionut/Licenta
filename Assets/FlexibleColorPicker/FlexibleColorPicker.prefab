@@ -994,6 +994,7 @@ GameObject:
   - component: {fileID: 2130943084913520339}
   - component: {fileID: 4926437703649764799}
   - component: {fileID: 2130943084913520338}
+  - component: {fileID: 314468663}
   m_Layer: 5
   m_Name: MainPicker
   m_TagString: Untagged
@@ -1118,6 +1119,21 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!114 &314468663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130943084913520350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ea7ea40fb6ab6048a5f962e5dab4e5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 6
+  y: 6
+  sprite: {fileID: 21300000, guid: ce940996bbf9aaf48b93e33ebcc08831, type: 3}
 --- !u!1 &2130943084915617138
 GameObject:
   m_ObjectHideFlags: 0
@@ -2738,6 +2754,7 @@ GameObject:
   - component: {fileID: 2130943085333300165}
   - component: {fileID: 7012262160869555083}
   - component: {fileID: 2130943085333300164}
+  - component: {fileID: 314468662}
   m_Layer: 5
   m_Name: HPicker
   m_TagString: Untagged
@@ -2864,6 +2881,21 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!114 &314468662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130943085333300160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ea7ea40fb6ab6048a5f962e5dab4e5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 6
+  y: 6
+  sprite: {fileID: 21300000, guid: ce940996bbf9aaf48b93e33ebcc08831, type: 3}
 --- !u!1 &2130943085339057721
 GameObject:
   m_ObjectHideFlags: 0

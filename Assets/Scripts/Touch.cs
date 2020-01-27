@@ -9,16 +9,17 @@ public class Touch : MonoBehaviour
     public GameObject buttonExample;
 
 
+
     private void Update(){
     
-        
-        ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+        if(Input.touchCount > 0){
+            ray = Camera.main.ScreenPointToRay(UnityEngine.Input.GetTouch(0).position);
 
-        if (Physics.Raycast (ray, Mathf.Infinity)){
-            Debug.Log("Hit Something");
-            buttonExample.SetActive(true);
+            if (Physics.Raycast (ray, Mathf.Infinity)){
+                Debug.Log("Hit Something");
+                buttonExample.SetActive(true);
+            }
         }
-          
     	
     }
 
