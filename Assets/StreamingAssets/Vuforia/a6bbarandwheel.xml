@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="bara1" motionHint="static"/>
+<ModelTarget name="wheel" motionHint="static"/>
+
+</Tracking>
+
+<Assembly name="bara1s_assembly" assemblyId="b6b3907d6f0544e784c898d333f0e1ec">
+<Part name="bara1" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="1.5681 8.25037 276.282" rotation="AD: 0.999999999999992 -0.00010213864952580469 0.0012459623508833586 189.373" trained="no">
+
+</EntryPoint>
+<EntryPoint name="viewpoint_0001" translation="124.147 20.0708 204.67" rotation="AD: 0.9997247718592346 0.04717962307599331 -0.5755317341132334 188.121" trained="no">
+
+</EntryPoint>
+<EntryPoint name="viewpoint_0005" translation="-122.579 19.6285 207.349" rotation="AD: 0.999719174361717 -0.047451652300035604 0.578850146614968 188.109" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+<Assembly name="wheels_assembly" assemblyId="daf928643dd84a1794941aeafb83bbc7">
+<Part name="wheel" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="1.21905 15.9021 71.8502" rotation="AD: 0.999924476334783 0.01758193535903355 -0.9777109883075122 181.473" trained="no">
+
+</EntryPoint>
+<EntryPoint name="viewpoint_0001" translation="22.7031 16.3987 58.0476" rotation="AD: -0.9980940038078597 -0.06409613837275138 3.5643117504080264 179.444" trained="no">
+
+</EntryPoint>
+<EntryPoint name="viewpoint_0005" translation="-21.4841 16.3227 60.1577" rotation="AD: 0.9999993489992369 0.00460262015610949 -0.25594635685666034 181.996" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+<ModelTargetDatabase name="a6bbarandwheel" />
+</QCARConfig>

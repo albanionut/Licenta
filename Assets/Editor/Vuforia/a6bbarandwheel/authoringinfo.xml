@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="17.0" toolVersion="8.6.7">
+<ModelTarget name="bara1" targetId="851877a056b64b2282c92776edd2267a" version="11.1" toolVersion="8.6.7" bbox="-58.784962 12.880760 120.633545 62.631092 50.868095 164.252106" previewImage="851877a056b64b2282c92776edd2267a_preview.jpg"/>
+<ModelTarget name="wheel" targetId="fc8d468b7fbc435b8b3c3ed258a86a42" version="11.1" toolVersion="8.6.7" bbox="-29.360857 5.756720 -9.281704 -21.594471 27.903675 12.865261" previewImage="fc8d468b7fbc435b8b3c3ed258a86a42_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="bara1s_assembly" assemblyId="b6b3907d6f0544e784c898d333f0e1ec">
+<Part name="bara1" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="1.5681 8.25037 276.282" rotation="AD: 0.999999999999992 -0.00010213864952580469 0.0012459623508833586 189.373" image="bara1_viewpoint_0000.png" trained="no">
+
+</EntryPoint>
+<EntryPoint name="viewpoint_0001" translation="124.147 20.0708 204.67" rotation="AD: 0.9997247718592346 0.04717962307599331 -0.5755317341132334 188.121" image="bara1_viewpoint_0001.png" trained="no">
+
+</EntryPoint>
+<EntryPoint name="viewpoint_0005" translation="-122.579 19.6285 207.349" rotation="AD: 0.999719174361717 -0.047451652300035604 0.578850146614968 188.109" image="bara1_viewpoint_0005.png" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+<Assembly name="wheels_assembly" assemblyId="daf928643dd84a1794941aeafb83bbc7">
+<Part name="wheel" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="1.21905 15.9021 71.8502" rotation="AD: 0.999924476334783 0.01758193535903355 -0.9777109883075122 181.473" image="wheel_viewpoint_0000.png" trained="no">
+
+</EntryPoint>
+<EntryPoint name="viewpoint_0001" translation="22.7031 16.3987 58.0476" rotation="AD: -0.9980940038078597 -0.06409613837275138 3.5643117504080264 179.444" image="wheel_viewpoint_0001.png" trained="no">
+
+</EntryPoint>
+<EntryPoint name="viewpoint_0005" translation="-21.4841 16.3227 60.1577" rotation="AD: 0.9999993489992369 0.00460262015610949 -0.25594635685666034 181.996" image="wheel_viewpoint_0005.png" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+<ModelTargetDatabase mtDBid="26b7ac3aa49d435da5cc494864db905d" name="a6bbarandwheel" toolVersion="13.0" version="13.0">
+    <RecognitionResult assemblyId="b6b3907d6f0544e784c898d333f0e1ec" assemblyName="bara1" entryPoint="viewpoint_0000" />
+    <RecognitionResult assemblyId="b6b3907d6f0544e784c898d333f0e1ec" assemblyName="bara1" entryPoint="viewpoint_0001" />
+    <RecognitionResult assemblyId="b6b3907d6f0544e784c898d333f0e1ec" assemblyName="bara1" entryPoint="viewpoint_0005" />
+    <RecognitionResult assemblyId="daf928643dd84a1794941aeafb83bbc7" assemblyName="wheel" entryPoint="viewpoint_0000" />
+    <RecognitionResult assemblyId="daf928643dd84a1794941aeafb83bbc7" assemblyName="wheel" entryPoint="viewpoint_0001" />
+    <RecognitionResult assemblyId="daf928643dd84a1794941aeafb83bbc7" assemblyName="wheel" entryPoint="viewpoint_0005" />
+</ModelTargetDatabase>
+
+</QCARInfo>
