@@ -12,6 +12,10 @@ public class Swipe : MonoBehaviour
     public GameObject bara1;
     public GameObject bara2;
     private GameObject[] listBar;
+    public Material materialSecondBar;
+    public Material materialFirstBar;
+
+                    
 
     void Start()
     {
@@ -45,9 +49,10 @@ public class Swipe : MonoBehaviour
                         if ((lp.x > fp.x))  //If the movement was to the right)
                         {   //Right swipe
                             Debug.Log("Right Swipe");
-                            bara1.SetActive(true);
-                            bara2.SetActive(false);
+                           bara1.SetActive(true);
+                           bara2.SetActive(false);
 
+                            GetComponent<ApplyColor>().material = materialFirstBar;
 
                         }
                         else
@@ -56,18 +61,9 @@ public class Swipe : MonoBehaviour
                             bara1.SetActive(false);
                             bara2.SetActive(true);
 
-                            /*listBar = GetComponent<BarList>().returnBarList();
+                            GetComponent<ApplyColor>().material = materialSecondBar;
 
-                            for (int i = 0; i < listBar.Length; i++)
-                            {
-                                if (listBar[i].active)
-                                {
-                                    listBar[i].SetActive(false);
-                                    listBar[i+1].SetActive(true);
-                                }
-
-                            }
-                            */
+                            
                         }
                     }
                     else
