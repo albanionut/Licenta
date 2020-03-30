@@ -2,24 +2,41 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+//Resources 
+//https://www.youtube.com/watch?v=Dn_BUIVdAPg&t=30s
 
 public class Swipe : MonoBehaviour
 {
     private Vector3 fp;   //First touch position
     private Vector3 lp;   //Last touch position
     private float dragDistance;  //minimum distance for a swipe to be registered
-    public GameObject bara1;
-    public GameObject bara2;
-    private GameObject[] listBar;
-    public Material materialSecondBar;
-    public Material materialFirstBar;
+    public int selectedBar = 0;
+    
 
-                    
+
 
     void Start()
     {
         dragDistance = Screen.height * 15 / 100; //dragDistance is 15% height of the screen
+        SelectBar();
+    }
+
+    void SelectBar()
+    {
+        int i = 0;
+        foreach(Transform bar in transform)
+        {
+            if (i == selectedBar)
+            {
+                bar.gameObject.SetActive(true);
+            } 
+            else
+            {
+                bar.gameObject.SetActive(false);
+            }
+            i++;
+
+        }
     }
 
     void Update()
@@ -46,24 +63,43 @@ public class Swipe : MonoBehaviour
                  //check if the drag is vertical or horizontal
                     if (Mathf.Abs(lp.x - fp.x) > Mathf.Abs(lp.y - fp.y))
                     {   //If the horizontal movement is greater than the vertical movement...
+                        int previousSelectedBar = selectedBar;
+
                         if ((lp.x > fp.x))  //If the movement was to the right)
                         {   //Right swipe
-                            Debug.Log("Right Swipe");
-                           bara1.SetActive(true);
-                           bara2.SetActive(false);
 
-                            GetComponent<ApplyColor>().material = materialFirstBar;
+                            
+
+                            Debug.Log("Right Swipe");
+                            
+                            if (selectedBar <= 0)
+                            {
+                                selectedBar = transform.childCount - 1;
+                            }
+                            else
+                            {
+                                selectedBar--;
+                            }
+
 
                         }
                         else
                         {   //Left swipe
                             Debug.Log("Left Swipe");
-                            bara1.SetActive(false);
-                            bara2.SetActive(true);
+                            if (selectedBar >= transform.childCount - 1)
+                            {
+                                selectedBar = 0;
+                            }
+                            else
+                            {
+                                selectedBar++;
+                            }
 
-                            GetComponent<ApplyColor>().material = materialSecondBar;
 
-                            
+                        }
+                        if(previousSelectedBar != selectedBar)
+                        {
+                            SelectBar();
                         }
                     }
                     else
