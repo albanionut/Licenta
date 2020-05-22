@@ -1,14 +1,53 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class ApplyColor : MonoBehaviour
 {
     public FlexibleColorPicker fcp;
-    public Material material;
+    [SerializeField]
+    private Material[] materials;
+    private Color flxColor;
+    private int randomInt;
+    public Image previewColorPicker;
 
-    void Update()
+    public void ChangeColor()
     {
-        material.color = fcp.color;
+        randomInt = Random.Range(0, materials.Length - 1);
+        
+  
+    }
+
+    private void Update()
+    {
+
+        if (flxColor!=fcp.color)
+        {
+        
+            try
+            {
+                materials[randomInt].color = fcp.color;
+                Debug.Log("Change color to " + gameObject.name);
+                flxColor = fcp.color;
+            }
+            catch { Debug.Log("Catch"); }
+
+        }
+        previewColorPicker.color = materials[randomInt].color;
+
+
 
     }
+    private void Start()
+    {
+        //flxColor = fcp.color;
+        materials = transform.GetComponentInChildren<MeshRenderer>().materials;
+
+    }
+ 
+
+
+    
+
 }

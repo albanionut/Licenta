@@ -75,7 +75,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color1: {r: 0, g: 1, b: 1, a: 1}
-    - _Color2: {r: 1, g: 1, b: 1, a: 1}
+    - _Color1: {r: 0, g: 0.64109176, b: 0.42495573, a: 1}
+    - _Color2: {r: 1, g: 0.64109176, b: 0.42495573, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _HSV: {r: 0, g: 0, b: 1, a: 1}
+    - _HSV: {r: 0.38254586, g: 0.47836983, b: 0.64109176, a: 1}
