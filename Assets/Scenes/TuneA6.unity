@@ -1104,9 +1104,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedBar: 0
-  barList:
-  - {fileID: 189896888}
-  - {fileID: 743891239}
 --- !u!1 &1038197498
 GameObject:
   m_ObjectHideFlags: 0

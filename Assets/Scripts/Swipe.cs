@@ -12,13 +12,22 @@ public class Swipe : MonoBehaviour
     private float dragDistance;  //minimum distance for a swipe to be registered
     public int selectedBar = 0;
 
-    [SerializeField]
-    private Transform[] barList;
+    //[SerializeField]
+    //private Transform[] barList;
+    private GameObject[] barList;
 
 
     void Start()
     {
+        
         dragDistance = Screen.height * 15 / 100; //dragDistance is 15% height of the screen
+        barList = new GameObject[transform.childCount];
+        for (int i = 0; i < barList.Length; i++)
+        {
+            barList[i] = transform.GetChild(i).gameObject;
+            Debug.Log(barList[i].name);
+
+        }
     }
 
     public void ChangeColor()
@@ -26,11 +35,11 @@ public class Swipe : MonoBehaviour
         try
         {
             barList[selectedBar].gameObject.GetComponent<ApplyColor>().ChangeColor();
-            Debug.Log("Try Changecolor swype");
+           
         }
         catch(System.Exception e)
         {
-            Debug.Log("Catch Changecolor swype");
+           
             Debug.Log(e);
         }
     }
@@ -80,7 +89,7 @@ public class Swipe : MonoBehaviour
                         if ((lp.x > fp.x))  //If the movement was to the right)
                         {   //Right swipe
 
-                            Debug.Log("Right Swipe");
+                           
                             
                             if(selectedBar == 0)
                             {
@@ -97,7 +106,7 @@ public class Swipe : MonoBehaviour
                         }
                         else
                         {   //Left swipe
-                            Debug.Log("Left Swipe");
+                           
                             if (selectedBar == barList.Length - 1)
                             {
                                 barList[selectedBar].gameObject.SetActive(false);
