@@ -9,4 +9,9 @@ public class ChangeSceneWheel : MonoBehaviour
     public void changeScene(){
         SceneManager.LoadScene("Wheel");
     }
+
+    public void changeSceneCarGlass()
+    {
+        SceneManager.LoadScene("CarGlass");
+    }
 }

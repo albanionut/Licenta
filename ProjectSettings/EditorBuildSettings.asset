@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Wheel.unity
     guid: 009a6af912927b2469b9dbffb42eacfb
+  - enabled: 1
+    path: Assets/Scenes/CarGlass.unity
+    guid: 318df2af35cc3f54d916dd58ccacde03
   m_configObjects: {}

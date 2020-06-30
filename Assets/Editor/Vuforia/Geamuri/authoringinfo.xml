@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="14.0" toolVersion="9.1.7">
+<ModelTarget name="Geamuri" targetId="dff6a35d55f94137a5f0784d442cfd33" version="11.1" toolVersion="9.1.7" bbox="-1.121172 0.400350 -1.989339 -0.631866 2.002892 1.578452" previewImage="dff6a35d55f94137a5f0784d442cfd33_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="Geamuris_assembly" assemblyId="60cc49ac569a47a58e747f38c1646afe">
+<Part name="Geamuri" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0001" translation="-0.181695 0.70436 4.46783" rotation="AD: -0.9870299692694907 -0.22970270953498662 1.0140584447096164 162.272" image="Geamuri_viewpoint_0001.png" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>

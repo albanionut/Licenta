@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="Geamuri" motionHint="static"/>
+
+</Tracking>
+
+<Assembly name="Geamuris_assembly" assemblyId="60cc49ac569a47a58e747f38c1646afe">
+<Part name="Geamuri" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0001" translation="-0.181695 0.70436 4.46783" rotation="AD: -0.9870299692694907 -0.22970270953498662 1.0140584447096164 162.272" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARConfig>
