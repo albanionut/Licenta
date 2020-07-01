@@ -11,7 +11,7 @@ public class Swipe : MonoBehaviour
     private Vector3 lp;   //Last touch position
     private float dragDistance;  //minimum distance for a swipe to be registered
     public int selectedBar = 0;
-
+    private GameObject fcp;
     //[SerializeField]
     //private Transform[] barList;
     private GameObject[] barList;
@@ -28,6 +28,7 @@ public class Swipe : MonoBehaviour
             Debug.Log(barList[i].name);
 
         }
+        fcp = GameObject.Find("FlexibleColorPicker");
     }
 
     public void ChangeColor()
@@ -46,21 +47,6 @@ public class Swipe : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.S))
-        {
-            if (selectedBar <= 0)
-            {
-                barList[selectedBar].gameObject.SetActive(false);
-                selectedBar = transform.childCount - 1;
-                barList[selectedBar].gameObject.SetActive(true);
-            }
-            else
-            {
-                barList[selectedBar].gameObject.SetActive(false);
-                selectedBar--;
-                barList[selectedBar].gameObject.SetActive(true);
-            }
-        }
 
         if (Input.touchCount == 1) // user is touching the screen with a single touch
         {
@@ -86,44 +72,44 @@ public class Swipe : MonoBehaviour
                     {   //If the horizontal movement is greater than the vertical movement...
                         int previousSelectedBar = selectedBar;
 
-                        if ((lp.x > fp.x))  //If the movement was to the right)
-                        {   //Right swipe
+                        if(fcp.transform.localScale == Vector3.zero ) //swype doesnt work when you are on change color
+                        { 
+                            if ((lp.x > fp.x))  //If the movement was to the right)
+                            {   //Right swipe
 
-                           
-                            
-                            if(selectedBar == 0)
-                            {
-                                barList[selectedBar].gameObject.SetActive(false);
-                                selectedBar = barList.Length - 1;
-                                barList[selectedBar].gameObject.SetActive(true);
+
+
+                                if (selectedBar == 0)
+                                {
+                                    barList[selectedBar].gameObject.SetActive(false);
+                                    selectedBar = barList.Length - 1;
+                                    barList[selectedBar].gameObject.SetActive(true);
+                                }
+                                else
+                                {
+                                    barList[selectedBar].gameObject.SetActive(false);
+                                    selectedBar--;
+                                    barList[selectedBar].gameObject.SetActive(true);
+                                }
                             }
                             else
-                            {
-                                barList[selectedBar].gameObject.SetActive(false);
-                                selectedBar--;
-                                barList[selectedBar].gameObject.SetActive(true);
+                            {   //Left swipe
+
+                                if (selectedBar == barList.Length - 1)
+                                {
+                                    barList[selectedBar].gameObject.SetActive(false);
+                                    selectedBar = 0;
+                                    barList[selectedBar].gameObject.SetActive(true);
+                                }
+                                else
+                                {
+                                    barList[selectedBar].gameObject.SetActive(false);
+                                    selectedBar++;
+                                    barList[selectedBar].gameObject.SetActive(true);
+                                }
                             }
                         }
-                        else
-                        {   //Left swipe
-                           
-                            if (selectedBar == barList.Length - 1)
-                            {
-                                barList[selectedBar].gameObject.SetActive(false);
-                                selectedBar = 0;
-                                barList[selectedBar].gameObject.SetActive(true);
-                            }
-                            else
-                            {
-                                barList[selectedBar].gameObject.SetActive(false);
-                                selectedBar++;
-                                barList[selectedBar].gameObject.SetActive(true);
-                            }
-                        }
-                        //if(previousSelectedBar != selectedBar)
-                        //{
-                        //    SelectBar();
-                        //}
+                 
                     }
                     else
                     {   //the vertical movement is greater than the horizontal movement
