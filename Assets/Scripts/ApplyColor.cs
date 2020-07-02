@@ -9,6 +9,8 @@ public class ApplyColor : MonoBehaviour
     [SerializeField]
     private Material[] materials;
     private Color flxColor;
+
+
     private int randomInt;
     public Image previewColorPicker;
 
@@ -21,21 +23,23 @@ public class ApplyColor : MonoBehaviour
 
     private void Update()
     {
-
         if (flxColor!=fcp.color)
         {
         
             try
             {
                 materials[randomInt].color = fcp.color;
+               
                 Debug.Log("Change color to " + gameObject.name);
                 flxColor = fcp.color;
             }
             catch { Debug.Log("Catch"); }
+            
 
         }
         previewColorPicker.color = materials[randomInt].color;
-
+        materials[randomInt].SetFloat("_Metallic", fcp.sliderValueMetallic);
+        materials[randomInt].SetFloat("_Glossiness", fcp.sliderValueSmoothness);
 
 
     }

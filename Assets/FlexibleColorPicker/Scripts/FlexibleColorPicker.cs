@@ -19,6 +19,8 @@ public class FlexibleColorPicker : MonoBehaviour {
     }
     public InputField hexInput;
     public Dropdown modeDropdown;
+    public Slider slider;
+    public Slider slider2;
 
     //public state
     public Color color {
@@ -31,6 +33,23 @@ public class FlexibleColorPicker : MonoBehaviour {
             typeUpdate = true;
         }
     }
+
+    public float sliderValueMetallic
+    {
+        get {
+
+            return this.slider.value; }
+        
+    }
+    public float sliderValueSmoothness
+    {
+        get {
+
+            return this.slider2.value; }
+        
+    }
+
+
     public MainPickingMode mode;
     public enum MainPickingMode {
         HS, HV, SH, SV, VH, VS

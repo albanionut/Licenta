@@ -8,12 +8,13 @@ public class MakeTransparent : MonoBehaviour
 {
     public GameObject geamu;
     private Material materialGeam;
+    private FlexibleColorPicker fcp;
     public Text procent;
     // Start is called before the first frame update
     void Start()
     {
         materialGeam = transform.GetComponentInChildren<MeshRenderer>().material;
-
+       
         
     }
 
@@ -22,6 +23,7 @@ public class MakeTransparent : MonoBehaviour
         Color oldColor = mat.color;
         Color newColor = new Color(oldColor.r, oldColor.g, oldColor.b, alphaLevel);
         mat.SetColor("_Color", newColor);
+        
 
     }
 
