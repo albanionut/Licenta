@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="14.0" toolVersion="9.1.7">
+<ModelTarget name="baraa6off" targetId="4d8515bd72c14c84b3270bc5b476513e" version="11.1" toolVersion="9.1.7" bbox="-58.784962 12.880760 120.633545 62.631092 50.868095 164.252106" previewImage="4d8515bd72c14c84b3270bc5b476513e_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="baraa6offs_assembly" assemblyId="f0288d927f2e449ba28ff2478a82d13c">
+<Part name="baraa6off" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="-15.9778 -12.6675 252.563" rotation="AD: 0.9999995785790444 -0.012524500840402117 0.07453525711911005 199.024" image="baraa6off_viewpoint_0000.png" trained="no">
+
+</EntryPoint>
+<EntryPoint name="viewpoint_0001" translation="23.8417 -18.5497 251.263" rotation="AD: 0.9999988196043842 0.01673340812906906 -0.09368302566104754 200.165" image="baraa6off_viewpoint_0001.png" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="baraa6off" motionHint="static"/>
+
+</Tracking>
+
+<Assembly name="baraa6offs_assembly" assemblyId="f0288d927f2e449ba28ff2478a82d13c">
+<Part name="baraa6off" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="-15.9778 -12.6675 252.563" rotation="AD: 0.9999995785790444 -0.012524500840402117 0.07453525711911005 199.024" trained="no">
+
+</EntryPoint>
+<EntryPoint name="viewpoint_0001" translation="23.8417 -18.5497 251.263" rotation="AD: 0.9999988196043842 0.01673340812906906 -0.09368302566104754 200.165" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARConfig>
